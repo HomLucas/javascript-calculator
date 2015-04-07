@@ -4,7 +4,7 @@
 <head>
 	<script type="text/javascript">
 	
-	function calc()
+	function ev()
 	{
 		str = document.getElementById('result').value;
 		document.getElementById('result').value = eval(str);
@@ -41,7 +41,7 @@
 		<input type="button" onclick="screen.display.value +='+'"  value="+">
 		<input type="button" onclick="screen.display.value +='-'"  value="-">
 		<input type="button" onclick="screen.display.value +='*'"  value="*">
-		<input type="button" onclick="calculate()"  value="=">
+		<input type="button" onclick="ev()"  value="=">
 		<input type="button" onclick="clone()"  value="oneclone">
 		<input type="button" onclick="screen.display.value = ' '" value="C">
 
