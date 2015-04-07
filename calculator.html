@@ -6,46 +6,61 @@
 	
 	function ev()
 	{
-		str = document.getElementById('result').value;
-		document.getElementById('result').value = eval(str);
+		document.screen.display.value = eval(document.screen.display.value);
+		
 	}
-	
+
+
 	</script>
 	
-	<style type="text/css">
+	<style>
 	#calculator{
 		border-radius: 30px;
+		background-color: rgba(0,100,255,0.3);
+		padding: 20px;
+		width: 300px;
+		height: 600px;
 		
 	}
-	#button{
-		
-	}
+	
 	</style>
 </head>
 
 <body>
+<script>
+ev();
+</script>
 	<h1> Welcome to my calculator</h1>
-	<div id="calculator">
-		<form name="screen" >
-		<input type="text" name="display" id="result"><br>
-		<input type="button" onlick="screen.value+='1'"  value="1">
-		<input type="button" onclick="screen.display.value +='2'"  value="2">
-		<input type="button" onclick="screen.display.value +='3'"  value="3">
-		<input type="button" onclick="screen.display.value +='4'"  value="4">
-		<input type="button" onclick="screen.display.value +='5'"  value="5">
-		<input type="button" onclick="screen.display.value +='6'"  value="6">
-		<input type="button" onclick="screen.display.value +='7'"  value="7">
-		<input type="button" onclick="screen.display.value +='8'"  value="8">
-		<input type="button" onclick="screen.display.value +='9'"  value="9">
-		<input type="button" onclick="screen.display.value +='0'"  value="0">
-		<input type="button" onclick="screen.display.value +='+'"  value="+">
-		<input type="button" onclick="screen.display.value +='-'"  value="-">
-		<input type="button" onclick="screen.display.value +='*'"  value="*">
-		<input type="button" onclick="ev()"  value="=">
-		<input type="button" onclick="clone()"  value="oneclone">
-		<input type="button" onclick="screen.display.value = ' '" value="C">
+	
+		<form name="screen">
+		<div id="calculator">
+		
+			<input type="text" name="display" id="result" value=" ">
+			<br>
+			<input class="input" type="button" onclick="screen.display.value += '1'"  value="1">
+			<input class="input" type="button" onclick="screen.display.value += '2'"  value="2">
+			<input class="input" type="button" onclick="screen.display.value += '3'"  value="3">
+		<br>
+			<input class="input" type="button" onclick="screen.display.value += '4'"  value="4">
+			<input class="input" type="button" onclick="screen.display.value += '5'"  value="5">
+			<input class="input" type="button" onclick="screen.display.value += '6'"  value="6">
+		<br>
+			<input class="input" type="button" onclick="screen.display.value += '7'"  value="7">
+			<input class="input" type="button" onclick="screen.display.value += '8'"  value="8">
+			<input class="input" type="button" onclick="screen.display.value += '9'"  value="9">	
+		<br>
+			<input class="input" type="button" onclick="screen.display.value += '0'"  value="0">
+			<input class="input" type="button" onclick="screen.display.value += '+'"  value="+">
+			<input class="input" type="button" onclick="screen.display.value += '-'"  value="-">
+		
+		<br>
+			<input class="input" type="button" onclick="screen.display.value += '*'"  value="*">
+			<input class="input" type="button" onclick="ev();"  value="=">
+			<input class="input" type="button" onclick="screen.display.value = ' " value="C">
+		<br>
 
+		</div>
 		</form>
-	</div>
+
 </body>
 </html>
